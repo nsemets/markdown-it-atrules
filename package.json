@@ -24,18 +24,16 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "np": "^3.0.4"
-  },
   "devDependencies": {
-    "eslint": "^4.9.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-nodeca": "1.0.3",
-    "eslint-plugin-react": "^7.4.0",
-    "markdown-it": "8.4.0",
-    "markdown-it-testgen": "0.1.4",
-    "mocha": "4.0.1"
+    "eslint-plugin-react": "^7.37.5",
+    "markdown-it": "14.1.1",
+    "markdown-it-testgen": "0.1.6",
+    "mocha": "11.7.5",
+    "np": "^11.0.3"
   }
 }

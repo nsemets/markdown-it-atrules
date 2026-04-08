@@ -20,13 +20,13 @@ describe('markdown-it-atrules', function () {
     html: true,
     linkify: true,
     typography: true,
-  }).use(require('../'), {
+  }).use(require('..'), {
     type: 'osf',
     pattern: /^http(?:s?):\/\/(?:www\.)?[a-zA-Z0-9 .:]{1,}\/render\?url=http(?:s?):\/\/[a-zA-Z0-9 .:]{1,}\/([a-zA-Z0-9]{5})\/\?action=download|(^[a-zA-Z0-9]{5}$)/,
     format(assetID) {
       var cssId = '__markdown-it-atrules-' + (new Date()).getTime();
-      return '<div id="' + cssId + '" class="mfr mfr-file"></div>' +
-        '<script>$(document).ready(function () {new mfr.Render("' + cssId + '", "' + getMfrUrl(assetID) + '");    }); </script>';
+      return '<div id="' + cssId + '" class="mfr mfr-file"></div>'
+        + '<script>$(document).ready(function () {new mfr.Render("' + cssId + '", "' + getMfrUrl(assetID) + '");    }); </script>';
     },
   });
 

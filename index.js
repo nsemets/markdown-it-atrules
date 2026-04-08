@@ -1,6 +1,5 @@
 // Process @[osf](guid0)
 
-
 const EMBED_REGEX = /@\[([a-zA-Z].+)]\([\s]*(.*?)[\s]*[)]/im;
 
 function assetEmbed(md, options) {
@@ -12,8 +11,8 @@ function assetEmbed(md, options) {
     var theState = state;
     const oldPos = state.pos;
 
-    if (state.src.charCodeAt(oldPos) !== 0x40/* @ */ ||
-        state.src.charCodeAt(oldPos + 1) !== 0x5B/* [ */) {
+    if (state.src.charCodeAt(oldPos) !== 0x40
+        ||/* @ */ state.src.charCodeAt(oldPos + 1) !== 0x5B/* [ */) {
       return false;
     }
 
