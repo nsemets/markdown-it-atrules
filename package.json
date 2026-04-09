@@ -1,6 +1,6 @@
 {
   "name": "@centerforopenscience/markdown-it-atrules",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Markdown-it plugin to embed files with the OSF's MFR",
   "main": "index.js",
   "scripts": {
